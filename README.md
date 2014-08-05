@@ -75,8 +75,8 @@ Depending on situation, the manager will shutdown itself. This can be reached by
 
 # History
 
-* [1.0.1](https://github.com/bazzline/php_component_memory_limit_manager/tree/1.0.1) - not released yet
-* [1.0.0](https://github.com/bazzline/php_component_memory_limit_manager/tree/1.0.0) - released at 05.08.2014
+* [1.0.1](https://github.com/bazzline/php_component_process_fork_manager/tree/1.0.1) - not released yet
+* [1.0.0](https://github.com/bazzline/php_component_process_fork_manager/tree/1.0.0) - released at 05.08.2014
     * initial commit with examples, unit tests and api documentation
 
 # Future Improvements
