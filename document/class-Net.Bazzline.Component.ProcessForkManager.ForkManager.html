@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="generator" content="ApiGen 2.8.0">
+
+	<title>Class Net\Bazzline\Component\ProcessForkManager\ForkManager | Process Fork Manager by Bazzline</title>
+
+	<script type="text/javascript" src="resources/combined.js?3400817590"></script>
+	<script type="text/javascript" src="elementlist.js?803864547"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360">
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+			<h3>Namespaces</h3>
+			<ul>
+				<li class="active"><a href="namespace-Net.html">Net<span></span></a>
+						<ul>
+				<li class="active"><a href="namespace-Net.Bazzline.html">Bazzline<span></span></a>
+						<ul>
+				<li class="active"><a href="namespace-Net.Bazzline.Component.html">Component<span></span></a>
+						<ul>
+				<li class="active"><a href="namespace-Net.Bazzline.Component.ProcessForkManager.html">ProcessForkManager</a>
+						</li>
+							</ul></li></ul></li></ul></li>
+				<li><a href="namespace-PHP.html">PHP</a>
+						</li>
+			</ul>
+		</div>
+
+		<hr>
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-Net.Bazzline.Component.ProcessForkManager.AbstractTask.html">AbstractTask</a></li>
+				<li class="active"><a href="class-Net.Bazzline.Component.ProcessForkManager.ForkManager.html">ForkManager</a></li>
+				<li><a href="class-Net.Bazzline.Component.ProcessForkManager.ForkManagerEvent.html">ForkManagerEvent</a></li>
+				<li><a href="class-Net.Bazzline.Component.ProcessForkManager.ForkManagerFactory.html">ForkManagerFactory</a></li>
+				<li><a href="class-Net.Bazzline.Component.ProcessForkManager.TaskManager.html">TaskManager</a></li>
+			</ul>
+
+			<h3>Interfaces</h3>
+			<ul>
+				<li><a href="class-Net.Bazzline.Component.ProcessForkManager.ExecutableInterface.html">ExecutableInterface</a></li>
+				<li><a href="class-Net.Bazzline.Component.ProcessForkManager.TaskInterface.html">TaskInterface</a></li>
+			</ul>
+
+
+			<h3>Exceptions</h3>
+			<ul>
+				<li><a href="class-Net.Bazzline.Component.ProcessForkManager.InvalidArgumentException.html">InvalidArgumentException</a></li>
+				<li><a href="class-Net.Bazzline.Component.ProcessForkManager.RuntimeException.html">RuntimeException</a></li>
+			</ul>
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="">
+		<input type="hidden" name="ie" value="UTF-8">
+		<input type="text" name="q" class="text">
+		<input type="submit" value="Search">
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-Net.Bazzline.Component.ProcessForkManager.html" title="Summary of Net\Bazzline\Component\ProcessForkManager"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+			</li>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class ForkManager</h1>
+
+
+	<div class="description">
+	
+<p>Class ForkManager</p>
+
+	</div>
+
+	<dl class="tree">
+		<dd style="padding-left:0px">
+<b><span>Net\Bazzline\Component\ProcessForkManager\ForkManager</span></b>			
+			 implements 
+				<a href="class-Net.Bazzline.Component.ProcessForkManager.ExecutableInterface.html"><span>Net\Bazzline\Component\ProcessForkManager\ExecutableInterface</span></a>, 
+			
+<span>Net\Bazzline\Component\MemoryLimitManager\MemoryLimitManagerDependentInterface</span>, 
+			
+<span>Net\Bazzline\Component\TimeLimitManager\TimeLimitManagerDependentInterface</span>
+			
+			
+		</dd>
+	</dl>
+
+
+
+
+
+
+
+
+	<div class="info">
+		
+		
+		<b>Namespace:</b> <a href="namespace-Net.html">Net</a>\<a href="namespace-Net.Bazzline.html">Bazzline</a>\<a href="namespace-Net.Bazzline.Component.html">Component</a>\<a href="namespace-Net.Bazzline.Component.ProcessForkManager.html">ProcessForkManager</a><br>
+		<b>Package:</b> Net\Bazzline\Component\ProcessForkManager<br>
+
+		<b>Located at</b> <a href="source-class-Net.Bazzline.Component.ProcessForkManager.ForkManager.html#15-578" title="Go to source code">ForkManager.php</a><br>
+	</div>
+
+
+
+	<table class="summary" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="__construct" id="___construct">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___construct">#</a>
+		<code><a href="source-class-Net.Bazzline.Component.ProcessForkManager.ForkManager.html#71-103" title="Go to source code">__construct</a>( <span>boolean <var>$validateEnvironment</var> = <span class="php-keyword1">true</span></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$validateEnvironment</var></dt>
+					<dd><code>boolean</code><br>$validateEnvironment</dd>
+				</dl></div>
+
+
+				<h4>Throws</h4>
+				<div class="list">
+					<code><code><a href="class-Net.Bazzline.Component.ProcessForkManager.RuntimeException.html">Net\Bazzline\Component\ProcessForkManager\RuntimeException</a></code></code><br>
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="addTask" id="_addTask">
+
+		<td class="attributes"><code>
+			 public 
+			mixed
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_addTask">#</a>
+		<code><a href="source-class-Net.Bazzline.Component.ProcessForkManager.ForkManager.html#105-115" title="Go to source code">addTask</a>( <span><code><a href="class-Net.Bazzline.Component.ProcessForkManager.AbstractTask.html">Net\Bazzline\Component\ProcessForkManager\AbstractTask</a></code> <var>$task</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$task</var></dt>
+					<dd><code><code><a href="class-Net.Bazzline.Component.ProcessForkManager.AbstractTask.html">Net\Bazzline\Component\ProcessForkManager\AbstractTask</a></code></code><br>$task</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>mixed</code><br>$this<br>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getEventDispatcher" id="_getEventDispatcher">
+
+		<td class="attributes"><code>
+			 public 
+			Symfony\Component\EventDispatcher\EventDispatcher
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getEventDispatcher">#</a>
+		<code><a href="source-class-Net.Bazzline.Component.ProcessForkManager.ForkManager.html#117-123" title="Go to source code">getEventDispatcher</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>Symfony\Component\EventDispatcher\EventDispatcher</code><br>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getMemoryLimitManager" id="_getMemoryLimitManager">
+
+		<td class="attributes"><code>
+			 public 
+			Net\Bazzline\Component\MemoryLimitManager\MemoryLimitManager
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getMemoryLimitManager">#</a>
+		<code><a href="source-class-Net.Bazzline.Component.ProcessForkManager.ForkManager.html#125-131" title="Go to source code">getMemoryLimitManager</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>Net\Bazzline\Component\MemoryLimitManager\MemoryLimitManager</code><br>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getTaskManager" id="_getTaskManager">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-Net.Bazzline.Component.ProcessForkManager.TaskManager.html">Net\Bazzline\Component\ProcessForkManager\TaskManager</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getTaskManager">#</a>
+		<code><a href="source-class-Net.Bazzline.Component.ProcessForkManager.ForkManager.html#133-139" title="Go to source code">getTaskManager</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Net.Bazzline.Component.ProcessForkManager.TaskManager.html">Net\Bazzline\Component\ProcessForkManager\TaskManager</a></code></code><br>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getTimeLimitManager" id="_getTimeLimitManager">
+
+		<td class="attributes"><code>
+			 public 
+			Net\Bazzline\Component\TimeLimitManager\TimeLimitManager
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getTimeLimitManager">#</a>
+		<code><a href="source-class-Net.Bazzline.Component.ProcessForkManager.ForkManager.html#141-147" title="Go to source code">getTimeLimitManager</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>Net\Bazzline\Component\TimeLimitManager\TimeLimitManager</code><br>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="injectEvent" id="_injectEvent">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_injectEvent">#</a>
+		<code><a href="source-class-Net.Bazzline.Component.ProcessForkManager.ForkManager.html#149-155" title="Go to source code">injectEvent</a>( <span><code><a href="class-Net.Bazzline.Component.ProcessForkManager.ForkManagerEvent.html">Net\Bazzline\Component\ProcessForkManager\ForkManagerEvent</a></code> <var>$event</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$event</var></dt>
+					<dd><code><code><a href="class-Net.Bazzline.Component.ProcessForkManager.ForkManagerEvent.html">Net\Bazzline\Component\ProcessForkManager\ForkManagerEvent</a></code></code><br>$event</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="injectEventDispatcher" id="_injectEventDispatcher">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_injectEventDispatcher">#</a>
+		<code><a href="source-class-Net.Bazzline.Component.ProcessForkManager.ForkManager.html#157-163" title="Go to source code">injectEventDispatcher</a>( <span>Symfony\Component\EventDispatcher\EventDispatcher <var>$dispatcher</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$dispatcher</var></dt>
+					<dd><code>Symfony\Component\EventDispatcher\EventDispatcher</code><br>$dispatcher</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="injectMemoryLimitManager" id="_injectMemoryLimitManager">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_injectMemoryLimitManager">#</a>
+		<code><a href="source-class-Net.Bazzline.Component.ProcessForkManager.ForkManager.html#165-171" title="Go to source code">injectMemoryLimitManager</a>( <span>Net\Bazzline\Component\MemoryLimitManager\MemoryLimitManager <var>$manager</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$manager</var></dt>
+					<dd><code>Net\Bazzline\Component\MemoryLimitManager\MemoryLimitManager</code><br>$manager</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="injectTimeLimitManager" id="_injectTimeLimitManager">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_injectTimeLimitManager">#</a>
+		<code><a href="source-class-Net.Bazzline.Component.ProcessForkManager.ForkManager.html#173-179" title="Go to source code">injectTimeLimitManager</a>( <span>Net\Bazzline\Component\TimeLimitManager\TimeLimitManager <var>$manager</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$manager</var></dt>
+					<dd><code>Net\Bazzline\Component\TimeLimitManager\TimeLimitManager</code><br>$manager</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="injectTaskManager" id="_injectTaskManager">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_injectTaskManager">#</a>
+		<code><a href="source-class-Net.Bazzline.Component.ProcessForkManager.ForkManager.html#181-187" title="Go to source code">injectTaskManager</a>( <span><code><a href="class-Net.Bazzline.Component.ProcessForkManager.TaskManager.html">Net\Bazzline\Component\ProcessForkManager\TaskManager</a></code> <var>$manager</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$manager</var></dt>
+					<dd><code><code><a href="class-Net.Bazzline.Component.ProcessForkManager.TaskManager.html">Net\Bazzline\Component\ProcessForkManager\TaskManager</a></code></code><br>$manager</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setMaximumNumberOfThreads" id="_setMaximumNumberOfThreads">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setMaximumNumberOfThreads">#</a>
+		<code><a href="source-class-Net.Bazzline.Component.ProcessForkManager.ForkManager.html#189-195" title="Go to source code">setMaximumNumberOfThreads</a>( <span>integer <var>$maximumNumberOfThreads</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$maximumNumberOfThreads</var></dt>
+					<dd><code>integer</code><br>$maximumNumberOfThreads</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setNumberOfMicrosecondsToCheckThreadStatus" id="_setNumberOfMicrosecondsToCheckThreadStatus">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setNumberOfMicrosecondsToCheckThreadStatus">#</a>
+		<code><a href="source-class-Net.Bazzline.Component.ProcessForkManager.ForkManager.html#197-203" title="Go to source code">setNumberOfMicrosecondsToCheckThreadStatus</a>( <span>integer <var>$numberOfMicrosecondsToCheckThreadStatus</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$numberOfMicrosecondsToCheckThreadStatus</var></dt>
+					<dd><code>integer</code><br>$numberOfMicrosecondsToCheckThreadStatus</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="execute" id="_execute">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_execute">#</a>
+		<code><a href="source-class-Net.Bazzline.Component.ProcessForkManager.ForkManager.html#205-282" title="Go to source code">execute</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+				<h4>Throws</h4>
+				<div class="list">
+					<code><code><a href="class-Net.Bazzline.Component.ProcessForkManager.RuntimeException.html">Net\Bazzline\Component\ProcessForkManager\RuntimeException</a></code></code><br>
+				</div>
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-Net.Bazzline.Component.ProcessForkManager.ExecutableInterface.html#_execute">Net\Bazzline\Component\ProcessForkManager\ExecutableInterface::execute()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		Process Fork Manager by Bazzline API documentation generated by <a href="http://apigen.org">ApiGen 2.8.0</a>
+	</div>
+</div>
+</div>
+</body>
+</html>
