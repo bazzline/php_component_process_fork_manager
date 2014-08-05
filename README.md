@@ -1,12 +1,54 @@
 # Fork Component for PHP
 
 This component easy up process forking and observing in php.
+It is using the [memory limit manager](https://github.com/bazzline/php_component_memory_limit_manager) as well as the [time limit manager](https://github.com/bazzline/php_component_time_limit_manager) and the [event dispatcher](https://github.com/symfony/EventDispatcher) component as robust base.
 
 The build status of the current master branch is tracked by Travis CI:
 [![Build Status](https://travis-ci.org/bazzline/php_component_process_fork_manager.png?branch=master)](http://travis-ci.org/bazzline/php_component_process_fork_manager)
 
+It is also available at [openhub.net](http://www.openhub.net/p/718154).
+
+# Examples
+
+* [basic](https://github.com/bazzline/php_component_process_fork_manager/tree/master/example/Basic/run.php)
+* [with logging by using event dispatcher](https://github.com/bazzline/php_component_process_fork_manager/tree/master/example/WithLoggingByUsingEventDispatcher/run.php)
+* [with more tasks then open threads](https://github.com/bazzline/php_component_process_fork_manager/tree/master/example/WithMoreTasksThenOpenThreads/run.php)
+* [with reaching memory limit](https://github.com/bazzline/php_component_process_fork_manager/tree/master/example/WithReachingMemoryLimit/run.php)
+* [with reaching time limit](https://github.com/bazzline/php_component_process_fork_manager/tree/master/example/WithReachingTimeLimit/run.php)
+
+# Install
+
+## Manuel
+
+    mkdir -p vendor/net_bazzline/php_component_process_fork_manager
+    cd vendor/net_bazzline/php_component_process_fork_manager
+    git clone https://github.com/bazzline/php_component_process_fork_manager
+
+## With [Packagist](https://packagist.org/packages/net_bazzline/php_component_process_fork_manager)
+
+    composer require net_bazzline/php_component_process_fork_manager:dev-master
+
+# Usage
+
+```php
+$factory = \Net\Bazzline\Component\ProcessForkManager\ForkManagerFactory();
+$manager = $factory->create();
+
+/** @var \Net\Bazzline\Component\ProcessForkManager\TaskInterface $task */
+$task = new \My\Task();
+
+$manager->addTask($task);
+$manager->execute();
+```
+
+# API
+
+Thanks to [apigen](https://github.com/apigen/apigen), the api is available in the [document](https://github.com/bazzline/php_component_process_fork_manager/blob/master/document/index.html) section.
 
 ## Terms
+
+The ForkManager itself gets multiple tasks attached. While executing, the fork manager keeps track of the current number of threads (working tasks) and time or memory limit.
+Depending on situation, the manager will shutdown itself. This can be reached by sending different posix signals (for example kill).
 
 * ForkManager
     * gets tasks attached
@@ -31,7 +73,13 @@ The build status of the current master branch is tracked by Travis CI:
         * getMemoryUsage()
     * provides method "setUpPOSIXSignalHandling" and "dispatchPOSIXSignal" to implement posix signal handling
 
-## Additional Ideas
+# History
+
+* [1.0.1](https://github.com/bazzline/php_component_memory_limit_manager/tree/1.0.1) - not released yet
+* [1.0.0](https://github.com/bazzline/php_component_memory_limit_manager/tree/1.0.0) - released at 05.08.2014
+    * initial commit with examples, unit tests and api documentation
+
+# Future Improvements
 
 * an event listener can be used to easy up extending this component
 * add shared memory for intern process calls ([ipc](https://github.com/pbergman/processes-fork/tree/master/src/PBergman/SystemV/IPC) / [fifo](https://github.com/kriswallsmith/spork/blob/master/src/Spork/Fifo.php), [shm](https://github.com/johan-adriaans/PHP-Semaphore-Fork-test/blob/master/index.php))
@@ -42,6 +90,14 @@ The build status of the current master branch is tracked by Travis CI:
     * setGroupId($groupId)
     * setUserId($userId)
     * task identifier
+* how to write unit tests for forking itself?
+    * [option one](http://kpayne.me/2012/01/17/how-to-unit-test-fork/)
+* there is a theoretical race condition problem and i have no idea how to solve this in php
+    * the parent process (fork manager) has process id 123
+    * a child process (task) gets process id 124
+    * child gets the signal kill or finished its execution and the process id 124 is available again
+    * between the usleep of the parent, a new system process gets spawned with the process id 124
+    * how distinguish if the process with id 124 is the child or a new process?
 
 ## Links
 
@@ -69,14 +125,3 @@ Thanks to all the great projects and pages out there.
 * [php thread by mmarquez](https://github.com/mmarquez/php-thread)
 * [forkdaemon php by baracudanetworks](https://github.com/barracudanetworks/forkdaemon-php)
 * [power spawn by lordgnu](https://github.com/lordgnu/PowerSpawn)
-
-# Open Questions
-
-* how to write unit tests for forking itself?
-    * [option one](http://kpayne.me/2012/01/17/how-to-unit-test-fork/)
-* there is a theoretical race condition problem and i have no idea how to solve this in php
-    * the parent process (fork manager) has process id 123
-    * a child process (task) gets process id 124
-    * child gets the signal kill or finished its execution and the process id 124 is available again
-    * between the usleep of the parent, a new system process gets spawned with the process id 124
-    * how distinguish if the process with id 124 is the child or a new process?
