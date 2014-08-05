@@ -81,7 +81,17 @@ Depending on situation, the manager will shutdown itself. This can be reached by
 
 # Future Improvements
 
-* add shared memory for intern process calls ([ipc](https://github.com/pbergman/processes-fork/tree/master/src/PBergman/SystemV/IPC) / [fifo](https://github.com/kriswallsmith/spork/blob/master/src/Spork/Fifo.php), [shm](https://github.com/johan-adriaans/PHP-Semaphore-Fork-test/blob/master/index.php))
+* implement usage of [pcntl_wifexited](http://de1.php.net/manual/en/function.pcntl-wifexited.php)
+* add shared memory for intern process calls 
+    * [ipc-0](https://github.com/pbergman/processes-fork/tree/master/src/PBergman/SystemV/IPC)
+    * [ipc-1](https://github.com/pear/PHP_Fork/blob/master/Fork.php)
+    * [fifo-0](https://github.com/kriswallsmith/spork/blob/master/src/Spork/Fifo.php)
+    * [fifo-1](https://github.com/mitallast/php-fork/blob/master/src/Fork/Fork.php)
+    * [fifo-2](https://github.com/kriswallsmith/spork/blob/master/src/Spork/ProcessManager.php)
+    * [shm-0](https://github.com/johan-adriaans/PHP-Semaphore-Fork-test/blob/master/index.php)
+    * [shm-1](http://phpsblog.agustinvillalba.com/))
+* add load based maximum number of threads like (throttleing)[https://github.com/kriswallsmith/spork/blob/master/tests/Spork/Test/Util/ThrottleIteratorTest.php)
+* extend signal handling like [here](https://github.com/barracudanetworks/forkdaemon-php/blob/master/fork_daemon.php)
 * TaskInterface could implement
     * getGroupId()
     * getUserId()
