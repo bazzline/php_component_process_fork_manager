@@ -90,7 +90,7 @@ Depending on situation, the manager will shutdown itself. This can be reached by
     * [fifo-2](https://github.com/kriswallsmith/spork/blob/master/src/Spork/ProcessManager.php)
     * [shm-0](https://github.com/johan-adriaans/PHP-Semaphore-Fork-test/blob/master/index.php)
     * [shm-1](http://phpsblog.agustinvillalba.com/))
-* add load based maximum number of threads like (throttleing)[https://github.com/kriswallsmith/spork/blob/master/tests/Spork/Test/Util/ThrottleIteratorTest.php)
+* add load based maximum number of threads like [throttleing](https://github.com/kriswallsmith/spork/blob/master/tests/Spork/Test/Util/ThrottleIteratorTest.php)
 * extend signal handling like [here](https://github.com/barracudanetworks/forkdaemon-php/blob/master/fork_daemon.php)
 * TaskInterface could implement
     * getGroupId()
