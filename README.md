@@ -81,10 +81,8 @@ Depending on situation, the manager will shutdown itself. This can be reached by
 
 # Future Improvements
 
-* an event listener can be used to easy up extending this component
 * add shared memory for intern process calls ([ipc](https://github.com/pbergman/processes-fork/tree/master/src/PBergman/SystemV/IPC) / [fifo](https://github.com/kriswallsmith/spork/blob/master/src/Spork/Fifo.php), [shm](https://github.com/johan-adriaans/PHP-Semaphore-Fork-test/blob/master/index.php))
-* add logging (by event event handler?)
-* AbstractTask should implement
+* TaskInterface could implement
     * getGroupId()
     * getUserId()
     * setGroupId($groupId)
