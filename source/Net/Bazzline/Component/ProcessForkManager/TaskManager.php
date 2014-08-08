@@ -86,13 +86,7 @@ class TaskManager
      */
     public function markRunningTaskAsAborted(AbstractTask $task)
     {
-        $key = $this->getArrayIndexKey($task);
-
-        if (!isset($this->runningTasks[$key])) {
-            throw new RuntimeException(
-                'provided task is not running'
-            );
-        }
+        $key = $this->getValidRunningTaskKey($task);
 
         $this->abortedTasks[$key] = $this->runningTasks[$key];
         $this->abortedTasks[$key]->markAsAborted();
@@ -105,13 +99,7 @@ class TaskManager
      */
     public function markRunningTaskAsFinished(AbstractTask $task)
     {
-        $key = $this->getArrayIndexKey($task);
-
-        if (!isset($this->runningTasks[$key])) {
-            throw new RuntimeException(
-                'provided task is not running'
-            );
-        }
+        $key = $this->getValidRunningTaskKey($task);
 
         $this->finishedTasks[$key] = $this->runningTasks[$key];
         $this->finishedTasks[$key]->markAsFinished();
@@ -129,6 +117,24 @@ class TaskManager
         $task->markAsRunning();
 
         $this->runningTasks[$key] = $task;
+    }
+
+    /**
+     * @param AbstractTask $task
+     * @return string
+     * @throws RuntimeException
+     */
+    private function getValidRunningTaskKey(AbstractTask $task)
+    {
+        $key = $this->getArrayIndexKey($task);
+
+        if (!isset($this->runningTasks[$key])) {
+            throw new RuntimeException(
+                'provided task is not running'
+            );
+        }
+
+        return $key;
     }
 
     /**

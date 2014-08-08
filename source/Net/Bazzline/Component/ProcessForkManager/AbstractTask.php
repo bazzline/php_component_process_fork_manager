@@ -135,6 +135,7 @@ abstract class AbstractTask implements TaskInterface
     /**
      * @param $nameOfSignalHandlerMethod
      * @throws InvalidArgumentException
+     * @codeCoverageIgnore
      */
     protected function setUpSignalHandling($nameOfSignalHandlerMethod)
     {

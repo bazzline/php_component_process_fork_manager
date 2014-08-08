@@ -236,7 +236,9 @@ class ForkManager implements ExecutableInterface, MemoryLimitManagerDependentInt
                     $this->sleep();
                 } else {
                     $task = $this->taskManager->getOpenTask();
-                    $this->startThread($task);
+                    if ($task instanceof AbstractTask) {
+                        $this->startThread($task);
+                    }
                 }
             }
         }
@@ -372,7 +374,6 @@ class ForkManager implements ExecutableInterface, MemoryLimitManagerDependentInt
     {
         $newestProcessId = null;
         $newestStartTime = 0;
-        $task = null;
 
         foreach ($this->threads as $processId => $data) {
             if ($data['startTime'] > $newestStartTime) {
@@ -464,6 +465,7 @@ class ForkManager implements ExecutableInterface, MemoryLimitManagerDependentInt
     //begin of posix signal handling
     /**
      * @param int $signal
+     * @codeCoverageIgnore
      */
     private function signalHandler($signal)
     {
@@ -500,6 +502,7 @@ class ForkManager implements ExecutableInterface, MemoryLimitManagerDependentInt
     /**
      * @param $nameOfSignalHandlerMethod
      * @throws InvalidArgumentException
+     * @codeCoverageIgnore
      */
     private function setUpSignalHandling($nameOfSignalHandlerMethod)
     {
