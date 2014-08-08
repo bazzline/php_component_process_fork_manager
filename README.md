@@ -12,6 +12,9 @@ The scrutinizer status are:
 The versioneye status is:
 [![dependencies](https://www.versioneye.com/user/projects/53e48c23e0a229172f000146/badge.svg?style=flat)](https://www.versioneye.com/user/projects/53e48c23e0a229172f000146)
 
+Downloads:
+[![Downloads this Month](https://img.shields.io/packagist/dm/net_bazzline/php_component_process_fork_manager.svg)](https://packagist.org/packages/net_bazzline/php_component_process_fork_manager)
+
 It is also available at [openhub.net](http://www.openhub.net/p/718154).
 
 # Examples
