@@ -9,6 +9,9 @@ The build status of the current master branch is tracked by Travis CI:
 The scrutinizer status are:
 [![code quality](https://scrutinizer-ci.com/g/bazzline/php_component_process_fork_manager/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/bazzline/php_component_process_fork_manager/) | [![code coverage](https://scrutinizer-ci.com/g/bazzline/php_component_process_fork_manager/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/bazzline/php_component_process_fork_manager/) | [![build status](https://scrutinizer-ci.com/g/bazzline/php_component_process_fork_manager/badges/build.png?b=master)](https://scrutinizer-ci.com/g/bazzline/php_component_process_fork_manager/)
 
+The versioneye status is:
+[![dependencies](https://www.versioneye.com/user/projects/53e48c23e0a229172f000146/badge.svg?style=flat)(https://www.versioneye.com/user/projects/53e48c23e0a229172f000146)
+
 It is also available at [openhub.net](http://www.openhub.net/p/718154).
 
 # Examples
