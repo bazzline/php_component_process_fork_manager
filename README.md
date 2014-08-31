@@ -82,12 +82,6 @@ Depending on situation, the manager will shutdown itself. This can be reached by
         * getMemoryUsage()
     * provides method "setUpPOSIXSignalHandling" and "dispatchPOSIXSignal" to implement posix signal handling
 
-# History
-
-* [1.0.1](https://github.com/bazzline/php_component_process_fork_manager/tree/1.0.1) - not released yet
-* [1.0.0](https://github.com/bazzline/php_component_process_fork_manager/tree/1.0.0) - released at 05.08.2014
-    * initial commit with examples, unit tests and api documentation
-
 # Future Improvements
 
 * implement usage of [pcntl_wifexited](http://de1.php.net/manual/en/function.pcntl-wifexited.php)
@@ -115,6 +109,14 @@ Depending on situation, the manager will shutdown itself. This can be reached by
     * child gets the signal kill or finished its execution and the process id 124 is available again
     * between the usleep of the parent, a new system process gets spawned with the process id 124
     * how distinguish if the process with id 124 is the child or a new process?
+
+# History
+
+* [1.0.2](https://github.com/bazzline/php_component_process_fork_manager/tree/1.0.2) - not released yet
+* [1.0.1](https://github.com/bazzline/php_component_process_fork_manager/tree/1.0.1) - released at 31.08.2014
+    * updated dependencies
+* [1.0.0](https://github.com/bazzline/php_component_process_fork_manager/tree/1.0.0) - released at 05.08.2014
+    * initial commit with examples, unit tests and api documentation
 
 ## Links
 
