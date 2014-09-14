@@ -5,6 +5,7 @@ It is using the [memory limit manager](https://github.com/bazzline/php_component
 
 The build status of the current master branch is tracked by Travis CI:
 [![Build Status](https://travis-ci.org/bazzline/php_component_process_fork_manager.png?branch=master)](http://travis-ci.org/bazzline/php_component_process_fork_manager)
+[![Latest stable](https://img.shields.io/packagist/v/apigen/apigen.svg)](https://packagist.org/packages/net_bazzline/php_component_process_fork_manager)
 
 The scrutinizer status are:
 [![code quality](https://scrutinizer-ci.com/g/bazzline/php_component_process_fork_manager/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/bazzline/php_component_process_fork_manager/) | [![code coverage](https://scrutinizer-ci.com/g/bazzline/php_component_process_fork_manager/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/bazzline/php_component_process_fork_manager/) | [![build status](https://scrutinizer-ci.com/g/bazzline/php_component_process_fork_manager/badges/build.png?b=master)](https://scrutinizer-ci.com/g/bazzline/php_component_process_fork_manager/)
