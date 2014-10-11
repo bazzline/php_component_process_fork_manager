@@ -148,3 +148,6 @@ Thanks to all the great projects and pages out there.
 * [php thread by mmarquez](https://github.com/mmarquez/php-thread)
 * [forkdaemon php by baracudanetworks](https://github.com/barracudanetworks/forkdaemon-php)
 * [power spawn by lordgnu](https://github.com/lordgnu/PowerSpawn)
+* [phpdaemon by yutas](https://github.com/yutas/phpdaemon)
+* [phpdaemon by Ocean Internet](https://github.com/OceanInternet/phpdaemon)
+* [PHPDaemonizer](https://github.com/denismilovanov/PHPDaemonizer)
