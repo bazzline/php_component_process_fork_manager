@@ -20,6 +20,8 @@ It is also available at [openhub.net](http://www.openhub.net/p/718154).
 
 # Examples
 
+If you are running on an unix system, you can use "watch 'ps auxf | grep php'" to validate that threads where started.
+
 * [basic](https://github.com/bazzline/php_component_process_fork_manager/tree/master/example/Basic/run.php)
 * [with logging by using event dispatcher](https://github.com/bazzline/php_component_process_fork_manager/tree/master/example/WithLoggingByUsingEventDispatcher/run.php)
 * [with more tasks then open threads](https://github.com/bazzline/php_component_process_fork_manager/tree/master/example/WithMoreTasksThenOpenThreads/run.php)
