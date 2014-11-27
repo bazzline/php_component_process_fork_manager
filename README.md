@@ -30,7 +30,7 @@ If you are running on an unix system, you can use "watch 'ps auxf | grep php'" t
 
 # Install
 
-## Manuel
+## By Hand
 
     mkdir -p vendor/net_bazzline/php_component_process_fork_manager
     cd vendor/net_bazzline/php_component_process_fork_manager
