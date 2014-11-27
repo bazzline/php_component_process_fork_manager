@@ -151,3 +151,4 @@ Thanks to all the great projects and pages out there.
 * [phpdaemon by yutas](https://github.com/yutas/phpdaemon)
 * [phpdaemon by Ocean Internet](https://github.com/OceanInternet/phpdaemon)
 * [PHPDaemonizer](https://github.com/denismilovanov/PHPDaemonizer)
+* [PHP piped process communications](https://github.com/manav148/PPPC)
