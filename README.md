@@ -113,6 +113,7 @@ Depending on situation, the manager will shutdown itself. This can be reached by
     * child gets the signal kill or finished its execution and the process id 124 is available again
     * between the usleep of the parent, a new system process gets spawned with the process id 124
     * how distinguish if the process with id 124 is the child or a new process?
+* implement usage of php [coroutine](https://nikic.github.io/2012/12/22/Cooperative-multitasking-using-coroutines-in-PHP.html)
 
 # History
 
