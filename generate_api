@@ -4,15 +4,16 @@
  * @author stev leibelt <artodeto@bazzline.net>
  * @since 2015-02-07
 */
+$path = __DIR__;
 //delete
-$command = 'rm -fr document/*';
+$command = 'rm -fr ' . $path . '/document/*';
 passthru($command);
 
 //generate
 $options = array(
-    '--source source/Net/Bazzline/Component/ProcessForkManager/',
-    '--destination document/',
+    '--source ' . $path . '/source/Net/Bazzline/Component/ProcessForkManager/',
+    '--destination ' . $path . '/document/',
     '--title "Process Fork Manager by Bazzline"'
    );
-$command = 'php vendor/bin/apigen generate ' . implode(' ', $options);
+$command = 'php ' . $path . '/vendor/bin/apigen generate ' . implode(' ', $options);
 passthru($command);

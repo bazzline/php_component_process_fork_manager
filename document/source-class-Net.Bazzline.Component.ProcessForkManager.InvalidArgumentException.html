@@ -2,12 +2,11 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<meta name="generator" content="ApiGen 2.8.0">
 	<meta name="robots" content="noindex">
 
 	<title>File InvalidArgumentException.php | Process Fork Manager by Bazzline</title>
 
-	<link rel="stylesheet" href="resources/style.css?3927427450">
+	<link rel="stylesheet" href="resources/style.css?e99947befd7bf673c6b43ff75e9e0f170c88a60e">
 
 </head>
 
@@ -18,19 +17,32 @@
 
 
 		<div id="groups">
-			<h3>Namespaces</h3>
+				<h3>Namespaces</h3>
 			<ul>
-				<li class="active"><a href="namespace-Net.html">Net<span></span></a>
+				<li>
+					<a href="namespace-Net.html">
+						Net<span></span>
+					</a>
+
 						<ul>
-				<li class="active"><a href="namespace-Net.Bazzline.html">Bazzline<span></span></a>
+				<li>
+					<a href="namespace-Net.Bazzline.html">
+						Bazzline<span></span>
+					</a>
+
 						<ul>
-				<li class="active"><a href="namespace-Net.Bazzline.Component.html">Component<span></span></a>
+				<li>
+					<a href="namespace-Net.Bazzline.Component.html">
+						Component<span></span>
+					</a>
+
 						<ul>
-				<li class="active"><a href="namespace-Net.Bazzline.Component.ProcessForkManager.html">ProcessForkManager</a>
+				<li>
+					<a href="namespace-Net.Bazzline.Component.ProcessForkManager.html">
+						ProcessForkManager					</a>
+
 						</li>
 							</ul></li></ul></li></ul></li>
-				<li><a href="namespace-PHP.html">PHP</a>
-						</li>
 			</ul>
 		</div>
 
@@ -40,25 +52,22 @@
 		<div id="elements">
 			<h3>Classes</h3>
 			<ul>
-				<li><a href="class-Net.Bazzline.Component.ProcessForkManager.AbstractTask.html">AbstractTask</a></li>
-				<li><a href="class-Net.Bazzline.Component.ProcessForkManager.ForkManager.html">ForkManager</a></li>
-				<li><a href="class-Net.Bazzline.Component.ProcessForkManager.ForkManagerEvent.html">ForkManagerEvent</a></li>
-				<li><a href="class-Net.Bazzline.Component.ProcessForkManager.ForkManagerFactory.html">ForkManagerFactory</a></li>
-				<li><a href="class-Net.Bazzline.Component.ProcessForkManager.TaskManager.html">TaskManager</a></li>
+				<li><a href="class-Net.Bazzline.Component.ProcessForkManager.AbstractTask.html">Net\Bazzline\Component\ProcessForkManager\AbstractTask</a></li>
+				<li><a href="class-Net.Bazzline.Component.ProcessForkManager.ForkManager.html">Net\Bazzline\Component\ProcessForkManager\ForkManager</a></li>
+				<li><a href="class-Net.Bazzline.Component.ProcessForkManager.ForkManagerEvent.html">Net\Bazzline\Component\ProcessForkManager\ForkManagerEvent</a></li>
+				<li><a href="class-Net.Bazzline.Component.ProcessForkManager.ForkManagerFactory.html">Net\Bazzline\Component\ProcessForkManager\ForkManagerFactory</a></li>
+				<li><a href="class-Net.Bazzline.Component.ProcessForkManager.TaskManager.html">Net\Bazzline\Component\ProcessForkManager\TaskManager</a></li>
 			</ul>
 
 			<h3>Interfaces</h3>
 			<ul>
-				<li><a href="class-Net.Bazzline.Component.ProcessForkManager.ExecutableInterface.html">ExecutableInterface</a></li>
-				<li><a href="class-Net.Bazzline.Component.ProcessForkManager.TaskInterface.html">TaskInterface</a></li>
+				<li><a href="class-Net.Bazzline.Component.ProcessForkManager.ExecutableInterface.html">Net\Bazzline\Component\ProcessForkManager\ExecutableInterface</a></li>
+				<li><a href="class-Net.Bazzline.Component.ProcessForkManager.InvalidArgumentException.html">Net\Bazzline\Component\ProcessForkManager\InvalidArgumentException</a></li>
+				<li class="active"><a href="class-Net.Bazzline.Component.ProcessForkManager.RuntimeException.html">Net\Bazzline\Component\ProcessForkManager\RuntimeException</a></li>
+				<li><a href="class-Net.Bazzline.Component.ProcessForkManager.TaskInterface.html">Net\Bazzline\Component\ProcessForkManager\TaskInterface</a></li>
 			</ul>
 
 
-			<h3>Exceptions</h3>
-			<ul>
-				<li class="active"><a href="class-Net.Bazzline.Component.ProcessForkManager.InvalidArgumentException.html">InvalidArgumentException</a></li>
-				<li><a href="class-Net.Bazzline.Component.ProcessForkManager.RuntimeException.html">RuntimeException</a></li>
-			</ul>
 
 
 		</div>
@@ -81,43 +90,39 @@
 				<a href="index.html" title="Overview"><span>Overview</span></a>
 			</li>
 			<li>
-				<a href="namespace-Net.Bazzline.Component.ProcessForkManager.html" title="Summary of Net\Bazzline\Component\ProcessForkManager"><span>Namespace</span></a>
-			</li>
+<span>Namespace</span>			</li>
 			<li>
-				<a href="class-Net.Bazzline.Component.ProcessForkManager.InvalidArgumentException.html" title="Summary of Net\Bazzline\Component\ProcessForkManager\InvalidArgumentException"><span>Class</span></a>
+				<a href="class-Net.Bazzline.Component.ProcessForkManager.RuntimeException.html" title="Summary of Net\Bazzline\Component\ProcessForkManager\RuntimeException"><span>Class</span></a>
 			</li>
 		</ul>
 		<ul>
-			<li>
-				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
-			</li>
 		</ul>
 		<ul>
 		</ul>
 	</div>
 
-<pre><code><span id="1" class="l"><a class="l" href="#1"> 1: </a><span class="xlang">&lt;?php</span>
-</span><span id="2" class="l"><a class="l" href="#2"> 2: </a><span class="php-comment">/**
-</span></span><span id="3" class="l"><a class="l" href="#3"> 3: </a><span class="php-comment"> * @author stev leibelt &lt;artodeto@bazzline.net&gt;
-</span></span><span id="4" class="l"><a class="l" href="#4"> 4: </a><span class="php-comment"> * @since 2014-07-26
-</span></span><span id="5" class="l"><a class="l" href="#5"> 5: </a><span class="php-comment"> */</span>
-</span><span id="6" class="l"><a class="l" href="#6"> 6: </a>
-</span><span id="7" class="l"><a class="l" href="#7"> 7: </a><span class="php-keyword1">namespace</span> Net\Bazzline\Component\ProcessForkManager;
-</span><span id="8" class="l"><a class="l" href="#8"> 8: </a>
-</span><span id="9" class="l"><a class="l" href="#9"> 9: </a><span class="php-keyword1">use</span> InvalidArgumentException <span class="php-keyword1">as</span> ParentClass;
-</span><span id="10" class="l"><a class="l" href="#10">10: </a>
-</span><span id="11" class="l"><a class="l" href="#11">11: </a><span class="php-comment">/**
-</span></span><span id="12" class="l"><a class="l" href="#12">12: </a><span class="php-comment"> * Class InvalidArgumentException
-</span></span><span id="13" class="l"><a class="l" href="#13">13: </a><span class="php-comment"> * @package Net\Bazzline\Component\ProcessForkManager
-</span></span><span id="14" class="l"><a class="l" href="#14">14: </a><span class="php-comment"> */</span>
-</span><span id="15" class="l"><a class="l" href="#15">15: </a><span class="php-keyword1">class</span> <a id="InvalidArgumentException" href="#InvalidArgumentException">InvalidArgumentException</a> <span class="php-keyword1">extends</span> ParentClass {}</span></code></pre>
+<pre><code><span id="1" class="l"><a href="#1"> 1: </a><span class="xlang">&lt;?php</span>
+</span><span id="2" class="l"><a href="#2"> 2: </a><span class="php-comment">/**
+</span></span><span id="3" class="l"><a href="#3"> 3: </a><span class="php-comment"> * @author stev leibelt &lt;artodeto@bazzline.net&gt;
+</span></span><span id="4" class="l"><a href="#4"> 4: </a><span class="php-comment"> * @since 2014-07-26
+</span></span><span id="5" class="l"><a href="#5"> 5: </a><span class="php-comment"> */</span>
+</span><span id="6" class="l"><a href="#6"> 6: </a>
+</span><span id="7" class="l"><a href="#7"> 7: </a><span class="php-keyword1">namespace</span> Net\Bazzline\Component\ProcessForkManager;
+</span><span id="8" class="l"><a href="#8"> 8: </a>
+</span><span id="9" class="l"><a href="#9"> 9: </a><span class="php-keyword1">use</span> InvalidArgumentException <span class="php-keyword1">as</span> ParentClass;
+</span><span id="10" class="l"><a href="#10">10: </a>
+</span><span id="11" class="l"><a href="#11">11: </a><span class="php-comment">/**
+</span></span><span id="12" class="l"><a href="#12">12: </a><span class="php-comment"> * Class InvalidArgumentException
+</span></span><span id="13" class="l"><a href="#13">13: </a><span class="php-comment"> * @package Net\Bazzline\Component\ProcessForkManager
+</span></span><span id="14" class="l"><a href="#14">14: </a><span class="php-comment"> */</span>
+</span><span id="15" class="l"><a href="#15">15: </a><span class="php-keyword1">class</span> InvalidArgumentException <span class="php-keyword1">extends</span> ParentClass {}</span></code></pre>
 
 	<div id="footer">
-		Process Fork Manager by Bazzline API documentation generated by <a href="http://apigen.org">ApiGen 2.8.0</a>
+		Process Fork Manager by Bazzline API documentation generated by <a href="http://apigen.org">ApiGen</a>
 	</div>
 </div>
 </div>
-<script src="resources/combined.js?706724297"></script>
-<script src="elementlist.js?803864547"></script>
+<script src="resources/combined.js?0a1fb121078c8620a30f2e216e0446d2ed2772af"></script>
+<script src="elementlist.js?d6d1afa05f86be61d97c6545bfd1db97fc036120"></script>
 </body>
 </html>
