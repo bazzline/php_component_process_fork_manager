@@ -18,6 +18,12 @@ Downloads:
 
 It is also available at [openhub.net](http://www.openhub.net/p/718154).
 
+# Error Handling
+
+##  mandatory php function "posix_getpid" is not available
+
+* uncomment "extension=posix.so' in your php.ini
+
 # Examples
 
 If you are running on an unix system, you can use "watch 'ps auxf | grep php'" to validate that threads where started.
@@ -117,7 +123,7 @@ Depending on situation, the manager will shutdown itself. This can be reached by
 
 # History
 
-* [1.0.2](https://github.com/bazzline/php_component_process_fork_manager/tree/1.0.2) - not released yet
+* upcomming - not released yet
     * updated dependencies
 * [1.0.1](https://github.com/bazzline/php_component_process_fork_manager/tree/1.0.1) - released at 31.08.2014
     * updated dependencies
