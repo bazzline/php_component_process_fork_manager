@@ -125,6 +125,8 @@ Depending on situation, the manager will shutdown itself. This can be reached by
 
 * upcomming - not released yet
     * updated dependencies
+* [1.0.2](https://github.com/bazzline/php_component_process_fork_manager/tree/1.0.2) - released at 08.02.2015
+    * removed dependency to apigen
 * [1.0.1](https://github.com/bazzline/php_component_process_fork_manager/tree/1.0.1) - released at 31.08.2014
     * updated dependencies
 * [1.0.0](https://github.com/bazzline/php_component_process_fork_manager/tree/1.0.0) - released at 05.08.2014
