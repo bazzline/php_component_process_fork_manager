@@ -17,7 +17,7 @@
         "php": ">=5.3.3",
         "net_bazzline/php_component_time_limit_manager": "1.0.2",
         "net_bazzline/php_component_memory_limit_manager": "1.0.4",
-        "symfony/event-dispatcher": "2.6.4"
+        "symfony/event-dispatcher": "2.6.6"
     },
     "require-dev": {
         "mockery/mockery": "0.9.4",
