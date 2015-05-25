@@ -1,6 +1,6 @@
 # Fork Component for PHP
 
-This component easy up process forking and observing in php.
+This free as in freedom component easy up process forking and observing in php.
 It is using the [memory limit manager](https://github.com/bazzline/php_component_memory_limit_manager) as well as the [time limit manager](https://github.com/bazzline/php_component_time_limit_manager) and the [event dispatcher](https://github.com/symfony/EventDispatcher) component as robust base.
 
 The build status of the current master branch is tracked by Travis CI:

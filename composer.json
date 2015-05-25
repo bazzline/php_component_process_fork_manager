@@ -1,6 +1,6 @@
 {
-    "description": "php component process fork manager for easy up process forking and observing threads",
-    "keywords": ["php", "multithreading", "thread", "fork", "manager", "thread manager", "fork manager", "process manager", "process fork manager"],
+    "description": "free as in freedom php component process fork manager for easy up process forking and observing threads",
+    "keywords": ["php", "multithreading", "thread", "fork", "manager", "thread manager", "fork manager", "process manager", "process fork manager", "lgpl", "free as in freedom"],
     "license": "LGPLv3",
     "name": "net_bazzline/php_component_process_fork_manager",
     "type": "library",
