@@ -17,12 +17,12 @@
         "php": ">=5.3.3",
         "net_bazzline/php_component_time_limit_manager": "1.0.3",
         "net_bazzline/php_component_memory_limit_manager": "1.0.5",
-        "symfony/event-dispatcher": "2.6.7"
+        "symfony/event-dispatcher": "2.7.1"
     },
     "require-dev": {
         "mockery/mockery": "0.9.4",
         "phpmd/phpmd": "2.2.3",
-        "phpunit/phpunit": "4.6.7"
+        "phpunit/phpunit": "4.7.5"
     },
     "autoload": {
         "psr-0": {
