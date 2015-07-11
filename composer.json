@@ -15,8 +15,8 @@
     "minimum-stability": "dev",
     "require": {
         "php": ">=5.3.3",
-        "net_bazzline/php_component_time_limit_manager": "1.0.3",
-        "net_bazzline/php_component_memory_limit_manager": "1.0.5",
+        "net_bazzline/php_component_time_limit_manager": "1.0.4",
+        "net_bazzline/php_component_memory_limit_manager": "1.0.6",
         "symfony/event-dispatcher": "2.7.1"
     },
     "require-dev": {

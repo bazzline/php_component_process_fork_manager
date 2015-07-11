@@ -124,6 +124,8 @@ Depending on situation, the manager will shutdown itself. This can be reached by
 # History
 
 * upcomming
+* [1.0.5](https://github.com/bazzline/php_component_process_fork_manager/tree/1.0.5) - released at 11.07.2015
+    * updated dependencies
 * [1.0.4](https://github.com/bazzline/php_component_process_fork_manager/tree/1.0.4) - released at 04.07.2015
     * removed phpmd
     * updated dependencies
