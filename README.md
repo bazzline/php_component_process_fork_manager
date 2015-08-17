@@ -94,7 +94,8 @@ Depending on situation, the manager will shutdown itself. This can be reached by
 # Future Improvements
 
 * implement usage of [pcntl_wifexited](http://de1.php.net/manual/en/function.pcntl-wifexited.php)
-* evaluate of [proc_open](https://github.com/ncuesta/Clinner/blob/master/src/Clinner/Command/Command.php) is better
+* evaluate if [proc_open](https://github.com/ncuesta/Clinner/blob/master/src/Clinner/Command/Command.php) is better
+* evaluate if [pthreads](https://github.com/krakjoe/pthreads)
 * add shared memory for intern process calls 
     * [ipc-0](https://github.com/pbergman/processes-fork/tree/master/src/PBergman/SystemV/IPC)
     * [ipc-1](https://github.com/pear/PHP_Fork/blob/master/Fork.php)
