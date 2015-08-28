@@ -15,13 +15,13 @@
     "minimum-stability": "dev",
     "require": {
         "php": ">=5.3.3",
-        "net_bazzline/php_component_time_limit_manager": "1.0.4",
-        "net_bazzline/php_component_memory_limit_manager": "1.0.6",
-        "symfony/event-dispatcher": "2.7.1"
+        "net_bazzline/php_component_time_limit_manager": "1.0.*",
+        "net_bazzline/php_component_memory_limit_manager": "1.0.*",
+        "symfony/event-dispatcher": "2.7.*"
     },
     "require-dev": {
         "mockery/mockery": "0.9.4",
-        "phpunit/phpunit": "4.7.6"
+        "phpunit/phpunit": "4.8.*"
     },
     "autoload": {
         "psr-0": {
