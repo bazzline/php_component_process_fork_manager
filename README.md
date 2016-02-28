@@ -28,11 +28,11 @@ It is also available at [openhub.net](http://www.openhub.net/p/718154).
 
 If you are running on an unix system, you can use "watch 'ps auxf | grep php'" to validate that threads where started.
 
-* [basic](https://github.com/bazzline/php_component_process_fork_manager/tree/master/example/Basic/run.php)
-* [with logging by using event dispatcher](https://github.com/bazzline/php_component_process_fork_manager/tree/master/example/WithLoggingByUsingEventDispatcher/run.php)
-* [with more tasks then open threads](https://github.com/bazzline/php_component_process_fork_manager/tree/master/example/WithMoreTasksThenOpenThreads/run.php)
-* [with reaching memory limit](https://github.com/bazzline/php_component_process_fork_manager/tree/master/example/WithReachingMemoryLimit/run.php)
-* [with reaching time limit](https://github.com/bazzline/php_component_process_fork_manager/tree/master/example/WithReachingTimeLimit/run.php)
+* [basic](https://github.com/bazzline/php_component_process_fork_manager/tree/master/example/Basic/run)
+* [with logging by using event dispatcher](https://github.com/bazzline/php_component_process_fork_manager/tree/master/example/WithLoggingByUsingEventDispatcher/run)
+* [with more tasks then open threads](https://github.com/bazzline/php_component_process_fork_manager/tree/master/example/WithMoreTasksThenOpenThreads/run)
+* [with reaching memory limit](https://github.com/bazzline/php_component_process_fork_manager/tree/master/example/WithReachingMemoryLimit/run)
+* [with reaching time limit](https://github.com/bazzline/php_component_process_fork_manager/tree/master/example/WithReachingTimeLimit/run)
 
 # Install
 
@@ -125,6 +125,13 @@ Depending on situation, the manager will shutdown itself. This can be reached by
 # History
 
 * upcomming
+* [1.1.0](https://github.com/bazzline/php_component_process_fork_manager/tree/1.1.0) - released at 28.02.2016
+    * updated example section
+        * mv run.php run
+        * chmod +x run
+    * moved to psr-4 autoloading
+    * removed dead api and documentation section
+    * updated dependencies
 * [1.0.9](https://github.com/bazzline/php_component_process_fork_manager/tree/1.0.9) - released at 18.12.2015
     * updated dependencies
 * [1.0.8](https://github.com/bazzline/php_component_process_fork_manager/tree/1.0.8) - released at 11.12.2015
@@ -177,3 +184,7 @@ Thanks to all the great projects and pages out there.
 * [phpdaemon by Ocean Internet](https://github.com/OceanInternet/phpdaemon)
 * [PHPDaemonizer](https://github.com/denismilovanov/PHPDaemonizer)
 * [PHP piped process communications](https://github.com/manav148/PPPC)
+
+# Final Words
+
+Star it if you like it :-). Add issues if you need it. Pull patches if you enjoy it. Write a blog entry if you use it. [Donate something](https://gratipay.com/~stevleibelt) if you love it :-].
