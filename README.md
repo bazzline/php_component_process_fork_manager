@@ -132,6 +132,8 @@ Depending on situation, the manager will shutdown itself. This can be reached by
     * moved to psr-4 autoloading
     * removed dead api and documentation section
     * updated dependencies
+* [1.0.11](https://github.com/bazzline/php_component_process_fork_manager/tree/1.0.11) - released at 18.08.2016
+    * updated development dependencies
 * [1.0.10](https://github.com/bazzline/php_component_process_fork_manager/tree/1.0.10) - released at 07.03.2016
     * updated dependencies
 * [1.0.9](https://github.com/bazzline/php_component_process_fork_manager/tree/1.0.9) - released at 18.12.2015

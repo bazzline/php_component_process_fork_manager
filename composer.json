@@ -35,8 +35,8 @@
         "symfony/event-dispatcher": "~2.7||~3.0"
     },
     "require-dev": {
-        "mockery/mockery": "0.9.4",
-        "phpunit/phpunit": "~4.8||~5.2"
+        "mockery/mockery": "0.9.5",
+        "phpunit/phpunit": "~4.8||~5.5"
     },
     "autoload": {
         "psr-4": {
