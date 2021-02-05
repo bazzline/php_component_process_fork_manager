@@ -1,3 +1,7 @@
+# PLEASE NOTE, THIS PROJECT IS NO LONGER BEING MAINTAINED
+
+I still like the idea but there is currently no use case to develop it anymore.
+
 # Fork Component for PHP
 
 This free as in freedom component easy up process forking and observing in php.
